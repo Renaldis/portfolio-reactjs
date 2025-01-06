@@ -8,11 +8,14 @@ Currently, two official plugins are available:
 - [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
 
 -Material UI
-npm install @mui/material @emotion/react @emotion/styled
+v6: npm install @mui/material @emotion/react @emotion/styled
+v5: npm install @mui/material @emotion/react @emotion/styled
 -Material UI Icon
-npm install @mui/icons-material @mui/material @emotion/styled @emotion/react
+v6: npm install @mui/icons-material @mui/material @emotion/styled @emotion/react
+v5: npm install @mui/icons-material
 -React Router Dom
 npm install react-router-dom
 
 -timeline material ui
-npm i @mui/lab
+v6: npm i @mui/lab
+v5: npm i @mui/lab
