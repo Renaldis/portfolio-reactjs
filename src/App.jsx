@@ -1,13 +1,20 @@
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Resume from "./pages/Resume/Resume";
 import Navbarr from "./components/Header/Navbarr";
+import Layout from "./components/Layout/Layout";
 
 function App() {
   return (
     <Router>
-      <Navbarr />
       <Routes>
-        <Route path="/" element={<Resume />} />
+        <Route
+          path="/"
+          element={
+            <Layout>
+              <Resume />
+            </Layout>
+          }
+        />
       </Routes>
     </Router>
   );
