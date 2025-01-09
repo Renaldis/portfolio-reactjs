@@ -5,7 +5,7 @@ import { Navbar } from "flowbite-react";
 export default function Navbarr() {
   return (
     <nav className="flex items-center border border-b-slate-300 justify-between rounded-lg overflow-hidden">
-      <div className="bg-yellow-300 hidden md:block">
+      <div className="bg-yellow-300 hidden md:block hover:bg-yellow-400 cursor-pointer">
         <i className="fas fa-home px-6 py-6"></i>
       </div>
       <Navbar fluid className="w-full">
