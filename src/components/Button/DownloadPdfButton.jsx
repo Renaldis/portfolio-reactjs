@@ -10,10 +10,10 @@ export default function DownloadPdfButton() {
   return (
     <button
       onClick={handleDownload}
-      className="text-xs font-medium px-3 py-2 bg-yellow-300 rounded-full cursor-pointer text-slate-800"
+      className="group text-xs font-medium px-3 py-2 bg-yellow-300 rounded-full cursor-pointer text-slate-800 hover:bg-yellow-400 hover:text-white"
     >
       Download PDF
-      <i className="ml-1 fas fa-download bg-white px-1 py-1 rounded-full"></i>
+      <i className="group-hover:bg-black ml-1 fas fa-download bg-white px-1 py-1 rounded-full "></i>
     </button>
   );
 }
