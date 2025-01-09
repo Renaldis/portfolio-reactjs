@@ -1,8 +1,10 @@
 "use client";
 
 import { Navbar } from "flowbite-react";
+import { useLocation } from "react-router-dom";
 
 export default function Navbarr() {
+  const location = useLocation();
   return (
     <nav className="flex items-center border border-b-slate-300 justify-between rounded-lg overflow-hidden">
       <div className="bg-yellow-300 hidden md:block hover:bg-yellow-400 cursor-pointer">
@@ -11,7 +13,13 @@ export default function Navbarr() {
       <Navbar fluid className="w-full">
         <Navbar.Toggle />
         <Navbar.Collapse className="w-full">
-          <Navbar.Link className="font-bold cursor-pointer">Resume</Navbar.Link>
+          <Navbar.Link
+            className={`font-bold cursor-pointer ${
+              location.pathname == "/" && "text-yellow-400"
+            }`}
+          >
+            Resume
+          </Navbar.Link>
           <Navbar.Link className="font-bold cursor-pointer">
             Portfolio
           </Navbar.Link>
