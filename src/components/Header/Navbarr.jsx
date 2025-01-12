@@ -2,12 +2,17 @@
 
 import { Navbar } from "flowbite-react";
 import { useLocation } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 
 export default function Navbarr() {
+  const navigate = useNavigate();
   const location = useLocation();
   return (
     <nav className="flex items-center border border-b-slate-300 justify-between rounded-lg overflow-hidden">
-      <div className="bg-yellow-300 hidden md:block hover:bg-yellow-400 cursor-pointer">
+      <div
+        className="bg-yellow-300 hidden md:block hover:bg-yellow-400 cursor-pointer"
+        onClick={() => navigate("/")}
+      >
         <i className="fas fa-home px-6 py-6"></i>
       </div>
       <Navbar fluid className="w-full">

@@ -3,8 +3,14 @@ import {
   educationHistory,
   nonFormalEducation,
 } from "../../utils/resumeDate";
+import { useState } from "react";
+import "../animate/slideDown.css";
 
 export default function Resume() {
+  const [isActiveDescValue, setIsActiveDescValue] = useState(false);
+  function handleOpenDescValue() {
+    setIsActiveDescValue(!isActiveDescValue);
+  }
   return (
     <section
       id="resume"
@@ -132,14 +138,32 @@ export default function Resume() {
                       </span>
                       <span className="text-slate-500">{item.date}</span>
                     </div>
-                    <h1 className="text-slate-700">Learn:</h1>
-                    <ul className="list-disc ms-4">
-                      {item.description.map((desc, idx) => (
-                        <li key={idx} className="text-slate-800">
-                          {desc}
-                        </li>
-                      ))}
-                    </ul>
+                    <button
+                      className={`text-slate-700 border rounded-full inline-flex items-center px-2 py-1 cursor-pointer hover:bg-yellow-200 focus:outline-none transition ${
+                        isActiveDescValue ? "bg-yellow-200" : ""
+                      }`}
+                      onClick={handleOpenDescValue}
+                    >
+                      Learn:
+                      <span
+                        className={`ml-1 transform transition-transform ${
+                          isActiveDescValue ? "rotate-180" : ""
+                        }`}
+                      >
+                        ▼
+                      </span>
+                    </button>
+                    {isActiveDescValue ? (
+                      <ul className="list-disc ms-4 animate-slide-down">
+                        {item.description.map((desc, idx) => (
+                          <li key={idx} className="text-slate-800">
+                            {desc}
+                          </li>
+                        ))}
+                      </ul>
+                    ) : (
+                      ""
+                    )}
                   </li>
                 ))
               ) : (
