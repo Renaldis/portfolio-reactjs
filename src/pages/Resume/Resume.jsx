@@ -3,24 +3,33 @@ import {
   educationHistory,
   nonFormalEducation,
 } from "../../utils/resumeDate";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import "../animate/slideDown.css";
 
 export default function Resume() {
-  const [isActiveDescValue, setIsActiveDescValue] = useState(false);
-  function handleOpenDescValue() {
-    setIsActiveDescValue(!isActiveDescValue);
+  const [isActiveDescValue, setIsActiveDescValue] = useState();
+  const [nonFormal, setNonFormal] = useState([]);
+
+  useEffect(() => {
+    setNonFormal(nonFormalEducation);
+  }, []);
+  function handleOpenDescValue(id) {
+    if (isActiveDescValue?.id === id) {
+      setIsActiveDescValue(null);
+    } else {
+      setIsActiveDescValue(nonFormal.find((nf) => nf.id === id));
+    }
   }
   return (
     <section
       id="resume"
-      className="bg-white shadow-sm rounded-lg border border-slate-100"
+      className="bg-white shadow-sm rounded-lg border border-slate-100 px-1"
     >
       <div className="p-5">
         <h1 className="mb-5 border-b-2 border-yellow-200 inline-block font-semibold">
           Resume
         </h1>
-        <div className="grid grid-cols-2 border-b border-gray-200">
+        <div className="md:grid grid-cols-2 md:border-b border-gray-200 flex flex-col-reverse">
           {/* Formal Education */}
           <div className="relative">
             <ol className="left-5 relative border-s-2 border-gray-200 dark:border-gray-700">
@@ -64,7 +73,7 @@ export default function Resume() {
             </ol>
           </div>
           {/* Working History */}
-          <div className="relative">
+          <div className="relative mb-5 md:mb-0">
             <ol className="left-5 relative border-s-2 border-gray-200 dark:border-gray-700">
               <li className="mb-8 ms-4 flex items-center">
                 <div className="absolute -start-5 flex items-center justify-center w-10 h-10 bg-yellow-300 rounded-full border border-yellow-300 shadow-md">
@@ -116,10 +125,10 @@ export default function Resume() {
                 <div className="absolute -start-5 flex items-center justify-center w-10 h-10 bg-yellow-300 rounded-full border border-yellow-300 shadow-md">
                   <i className="fas fa-graduation-cap" />
                 </div>
-                <span className="ms-3 font-semibold">Non-Formal Education</span>
+                <span className="mx-3 font-semibold">Non-Formal Education</span>
               </li>
-              {nonFormalEducation?.length ? (
-                nonFormalEducation.map((item, idx) => (
+              {nonFormal?.length ? (
+                nonFormal.map((item, idx) => (
                   <li key={idx} className="mb-2 ms-4 text-sm">
                     <div className="absolute w-3 h-3 bg-yellow-200 rounded-full mt-1.5 -start-[7.6px] border border-white dark:border-gray-900 dark:bg-gray-700"></div>
                     <div className="flex items-center gap-2">
@@ -140,20 +149,20 @@ export default function Resume() {
                     </div>
                     <button
                       className={`text-slate-700 border rounded-full inline-flex items-center px-2 py-1 cursor-pointer hover:bg-yellow-200 focus:outline-none transition ${
-                        isActiveDescValue ? "bg-yellow-200" : ""
+                        isActiveDescValue?.id === item.id && "bg-yellow-200"
                       }`}
-                      onClick={handleOpenDescValue}
+                      onClick={() => handleOpenDescValue(item.id)}
                     >
                       Learn:
                       <span
                         className={`ml-1 transform transition-transform ${
-                          isActiveDescValue ? "rotate-180" : ""
+                          isActiveDescValue?.id === item.id && "rotate-180"
                         }`}
                       >
                         ▼
                       </span>
                     </button>
-                    {isActiveDescValue ? (
+                    {isActiveDescValue?.id === item.id && (
                       <ul className="list-disc ms-4 animate-slide-down">
                         {item.description.map((desc, idx) => (
                           <li key={idx} className="text-slate-800">
@@ -161,8 +170,6 @@ export default function Resume() {
                           </li>
                         ))}
                       </ul>
-                    ) : (
-                      ""
                     )}
                   </li>
                 ))

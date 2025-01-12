@@ -17,7 +17,7 @@ export default function Navbarr() {
       </div>
       <Navbar fluid className="w-full">
         <Navbar.Toggle />
-        <Navbar.Collapse className="w-full">
+        <Navbar.Collapse className="w-full ">
           <Navbar.Link
             className={`font-bold cursor-pointer ${
               location.pathname == "/" && "text-yellow-400"
@@ -38,7 +38,7 @@ export default function Navbarr() {
           <i className="fab fa-instagram text-xl"></i>
           <i className="fab fa-twitter text-xl"></i>
           <i className="fab fa-github text-xl"></i>
-          <button className="bg-yellow-300 text-black flex items-center gap-2 px-4 py-1 rounded-full font-semibold">
+          <button className=" bg-yellow-300 text-black flex items-center gap-2 text-xs md:text-sm px-2 py-1 md:px-4 md:py-1 rounded-full font-semibold">
             Hire Me
             <span className="bg-white rounded-full px-2 py-1">
               <i className="fab fa-whatsapp"></i>
