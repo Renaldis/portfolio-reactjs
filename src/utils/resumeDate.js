@@ -8,7 +8,12 @@ let workingHistory = [
     locType: "on-site",
     description: [
       "Helping instructor during courses",
-      "inputting the grades of practitioners who attended the course",
+      "Inputting the grades of practitioners who attended the course",
+      "Supervising and assisting students in understanding intermediate-level C# and SQL materials",
+      "Providing guidance to students in solving practical exercises and debugging their code",
+      "Preparing and organizing course materials to support effective learning",
+      "Offering one-on-one support for students who required additional assistance",
+      "Ensuring smooth operation of the class by coordinating with instructors and handling technical issues during sessions",
     ],
     img: "https://media.licdn.com/dms/image/v2/C510BAQFZuJ22U-5ECw/company-logo_100_100/company-logo_100_100/0/1630580476989?e=1744848000&v=beta&t=e5TKH8gQ0gDallZ0GpeImKav9TMorxwp64A0xmmHXkA",
   },
@@ -70,4 +75,28 @@ let educationHistory = [
   },
 ];
 
-export { workingHistory, educationHistory };
+let nonFormalEducation = [
+  {
+    id: 1,
+    title: "Learning Frontend ReactJS",
+    employe: "sanbercode",
+    type: "Bootcamp",
+    img: "https://sanbercode.com/logo-horizontal.png",
+    date: "2 Desember - 27 Desember",
+    location: "online",
+    description: [
+      "Introduction to ReactJS",
+      "Components & Props",
+      "State & Component Lifecycle",
+      "Lists & Forms",
+      "Hooks",
+      "REST API with Axios",
+      "Context",
+      "React Router",
+      "Template UI (Design UI Framework)",
+      "Authentication",
+      "Deployment for Development",
+    ],
+  },
+];
+export { workingHistory, educationHistory, nonFormalEducation };
