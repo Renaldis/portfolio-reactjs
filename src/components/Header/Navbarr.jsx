@@ -22,10 +22,16 @@ export default function Navbarr() {
             className={`font-bold cursor-pointer ${
               location.pathname == "/" && "text-yellow-400"
             }`}
+            onClick={() => navigate("/")}
           >
             Resume
           </Navbar.Link>
-          <Navbar.Link className="font-bold cursor-pointer">
+          <Navbar.Link
+            className={`font-bold cursor-pointer ${
+              location.pathname == "/portfolio" && "text-yellow-400"
+            }`}
+            onClick={() => navigate("/portfolio")}
+          >
             Portfolio
           </Navbar.Link>
           <Navbar.Link className="font-bold cursor-pointer">Blog</Navbar.Link>
