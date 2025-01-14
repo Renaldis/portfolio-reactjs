@@ -1,3 +1,4 @@
+import { Outlet } from "react-router-dom";
 import NavPort from "./components/NavPort";
 
 export default function Portfolio() {
@@ -12,6 +13,7 @@ export default function Portfolio() {
         </h1>
         <NavPort />
       </div>
+      <Outlet />
     </section>
   );
 }

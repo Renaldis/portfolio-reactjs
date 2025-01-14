@@ -1,10 +1,33 @@
+import { NavLink } from "react-router-dom";
 export default function NavPort() {
   return (
-    <div className="flex gap-4 text-slate-500 font-semibold text-sm">
-      <a href="#">All</a>
-      <a href="#">UI/UX Figma</a>
-      <a href="#">PHP</a>
-      <a href="#">Javascript</a>
-    </div>
+    <nav>
+      <ul className="flex gap-4">
+        <li>
+          <NavLink
+            to="all"
+            className={({ isActive }) => (isActive ? "active" : "")}
+          >
+            All
+          </NavLink>
+        </li>
+        <li>
+          <NavLink
+            to="php"
+            className={({ isActive }) => (isActive ? "active" : "")}
+          >
+            PHP
+          </NavLink>
+        </li>
+        <li>
+          <NavLink
+            to="javascript"
+            className={({ isActive }) => (isActive ? "active" : "")}
+          >
+            JavaScript
+          </NavLink>
+        </li>
+      </ul>
+    </nav>
   );
 }
