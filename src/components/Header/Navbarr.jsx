@@ -30,7 +30,7 @@ export default function Navbarr() {
             className={`font-bold cursor-pointer ${
               location.pathname == "/portfolio" && "text-yellow-400"
             }`}
-            onClick={() => navigate("/portfolio")}
+            onClick={() => navigate("/portfolio/all")}
           >
             Portfolio
           </Navbar.Link>

@@ -6,43 +6,46 @@ import NavPort from "./pages/Portfolio/components/NavPort";
 import AllSection from "./pages/Portfolio/pages/AllSection";
 import JavascriptSection from "./pages/Portfolio/pages/JavascriptSection";
 import PhpSection from "./pages/Portfolio/pages/PhpSection";
+import GlobalProvider from "./components/context/GlobalProvider";
 
 function App() {
   return (
-    <Router>
-      <Routes>
-        <Route
-          path="/"
-          element={
-            <Layout>
-              <Resume />
-            </Layout>
-          }
-        />
-        <Route
-          path="/portfolio"
-          element={
-            <Layout>
-              <Portfolio />
-            </Layout>
-          }
-        />
-        <Route
-          path="/portfolio"
-          element={
-            <Layout>
-              <Portfolio>
-                <NavPort />
-              </Portfolio>
-            </Layout>
-          }
-        >
-          <Route path="all" element={<AllSection />} />
-          <Route path="php" element={<JavascriptSection />} />
-          <Route path="javascript" element={<PhpSection />} />
-        </Route>
-      </Routes>
-    </Router>
+    <GlobalProvider>
+      <Router>
+        <Routes>
+          <Route
+            path="/"
+            element={
+              <Layout>
+                <Resume />
+              </Layout>
+            }
+          />
+          <Route
+            path="/portfolio"
+            element={
+              <Layout>
+                <Portfolio />
+              </Layout>
+            }
+          />
+          <Route
+            path="/portfolio"
+            element={
+              <Layout>
+                <Portfolio>
+                  <NavPort />
+                </Portfolio>
+              </Layout>
+            }
+          >
+            <Route path="all" element={<AllSection />} />
+            <Route path="php" element={<JavascriptSection />} />
+            <Route path="javascript" element={<PhpSection />} />
+          </Route>
+        </Routes>
+      </Router>
+    </GlobalProvider>
   );
 }
 
