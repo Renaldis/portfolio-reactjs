@@ -7,6 +7,7 @@ import AllSection from "./pages/Portfolio/pages/AllSection";
 import JavascriptSection from "./pages/Portfolio/pages/JavascriptSection";
 import PhpSection from "./pages/Portfolio/pages/PhpSection";
 import GlobalProvider from "./components/context/GlobalProvider";
+import FigmaSection from "./pages/Portfolio/pages/FigmaSection";
 
 function App() {
   return (
@@ -40,8 +41,9 @@ function App() {
             }
           >
             <Route path="all" element={<AllSection />} />
-            <Route path="php" element={<JavascriptSection />} />
-            <Route path="javascript" element={<PhpSection />} />
+            <Route path="javascript" element={<JavascriptSection />} />
+            <Route path="php" element={<PhpSection />} />
+            <Route path="figma" element={<FigmaSection />} />
           </Route>
         </Routes>
       </Router>

@@ -28,7 +28,11 @@ export default function Navbarr() {
           </Navbar.Link>
           <Navbar.Link
             className={`font-bold cursor-pointer ${
-              location.pathname == "/portfolio/all" && "text-yellow-400"
+              (location.pathname == "/portfolio/all" ||
+                location.pathname == "/portfolio/javascript" ||
+                location.pathname == "/portfolio/php" ||
+                location.pathname == "/portfolio/figma") &&
+              "text-yellow-400"
             }`}
             onClick={() => navigate("/portfolio/all")}
           >

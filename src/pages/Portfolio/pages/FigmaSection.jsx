@@ -1,23 +1,23 @@
 import { useContext, useEffect, useState } from "react";
 import { dataContext } from "../../../components/context/dataContext";
 
-export default function JavascriptSection() {
+export default function FigmaSection() {
   const { projects } = useContext(dataContext);
-  const [dataJS, setDataJS] = useState([]);
+  const [dataFigma, setDataFigma] = useState([]);
 
   useEffect(() => {
-    const filteredDataJS = projects.filter(
-      (project) => project.tech === "javascript"
+    const filteredDataFigma = projects.filter(
+      (project) => project.tech === "figma"
     );
-    setDataJS(filteredDataJS);
+    setDataFigma(filteredDataFigma);
   }, [projects]);
 
   return (
     <div className="px-5 pb-5">
-      <h1 className="font-semibold text-slate-800 mb-2">Javascript</h1>
+      <h1 className="font-semibold text-slate-800 mt-10 mb-2">Figma</h1>
       <div className="grid lg:grid-cols-3 sm:grid-cols-2 grid-cols-1 gap-2">
-        {dataJS.length > 0 ? (
-          dataJS.map((project) => (
+        {dataFigma.length > 0 ? (
+          dataFigma.map((project) => (
             <div
               key={project.id}
               className="container-card w-auto border border-slate-200 rounded-md shadow-sm overflow-hidden"

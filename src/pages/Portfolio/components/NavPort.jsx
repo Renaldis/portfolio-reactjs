@@ -13,6 +13,14 @@ export default function NavPort() {
         </li>
         <li>
           <NavLink
+            to="javascript"
+            className={({ isActive }) => (isActive ? "text-yellow-300" : "")}
+          >
+            JavaScript
+          </NavLink>
+        </li>
+        <li>
+          <NavLink
             to="php"
             className={({ isActive }) => (isActive ? "text-yellow-300" : "")}
           >
@@ -21,10 +29,10 @@ export default function NavPort() {
         </li>
         <li>
           <NavLink
-            to="javascript"
+            to="figma"
             className={({ isActive }) => (isActive ? "text-yellow-300" : "")}
           >
-            JavaScript
+            Figma
           </NavLink>
         </li>
       </ul>
