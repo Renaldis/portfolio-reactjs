@@ -47,6 +47,35 @@ const project = [
     image_url: "../../../public/project/daftar-tamu-wedding.png",
     tech: "php",
   },
+  {
+    id: 6,
+    title: "Keraton Travel",
+    short_descript: "Website Travel",
+    link_project: "https://keratontravel.netlify.app/",
+    link_github: "https://github.com/Renaldis/keratontravel",
+    image_url: "../../../public/project/keratonTravel.png",
+    tech: "javascript",
+  },
+  {
+    id: 7,
+    title: "UI/UX Figma: GSC Booking Sport App",
+    short_descript: "Rancangan Prototype Booking Sport APP With Figma",
+    link_project:
+      "https://www.figma.com/proto/vVQ8ajrrNIB2Li6qvx7Llz/Sport-Centre-Booking?node-id=0-1&t=OqZrKgqJYT5dSXZL-1",
+    link_github: "",
+    image_url: "../../../public/project/Booking-Sport-App.png",
+    tech: "figma",
+  },
+  {
+    id: 8,
+    title: "UI/UX Figma: Food Order Jiwa+",
+    short_descript: "Rancangan Prototype Pemesanan makanan Jiwa+ With Figma",
+    link_project:
+      "https://www.figma.com/proto/FPLUhK1ZHSl4waa4VLtmgL/Prototype-UI-UX-Aplikasi-Janji-Jiwa-Design-Thinking?node-id=51-367&t=kdafmQI9NCAnIZn0-1&starting-point-node-id=51%3A385&scaling=scale-down&content-scaling=fixed",
+    link_github: "",
+    image_url: "../../../public/project/JanjiJiwa.png",
+    tech: "figma",
+  },
 ];
 
 export { project };
