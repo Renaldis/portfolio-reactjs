@@ -5,8 +5,8 @@ const project = [
     short_descript:
       "Website lowongan kerja berbasis ReactJS untuk mempermudah pencarian dan pengelolaan informasi pekerjaan.",
     link_project: "https://renaldi.reactjssanbercode.my.id/",
-    link_github: "",
-    image_url: "../../../public/project/finalproject-reactjs.png",
+    link_github: "https://github.com/Renaldis/job-portal-react-SiniLoker.id",
+    image_url: "/project/finalproject-reactjs.png",
     tech: "javascript",
   },
   {
@@ -16,7 +16,7 @@ const project = [
       "Website QuizClone berbasis JS untuk Melatih Logika Pemrograman NPM 11122233 password 123321.",
     link_project: "https://gurmaquizclone.netlify.app/",
     link_github: "https://github.com/Renaldis/gurmaquizclone/tree/main",
-    image_url: "../../../public/project/Clone-QuizApp-University.png",
+    image_url: "/project/Clone-QuizApp-University.png",
     tech: "javascript",
   },
   {
@@ -25,7 +25,7 @@ const project = [
     short_descript: "Website Portfolio Pribadi berbasis JS.",
     link_project: "https://personalweb142.netlify.app/",
     link_github: "https://github.com/Renaldis/PortfolioBeginner",
-    image_url: "../../../public/project/PersonalWebsite-V1.png",
+    image_url: "/project/PersonalWebsite-V1.png",
     tech: "javascript",
   },
   {
@@ -34,7 +34,7 @@ const project = [
     short_descript: "Dicoding Dasar Pengembangan Web",
     link_project: "https://bandungoverview.netlify.app/",
     link_github: "",
-    image_url: "../../../public/project/Final-Project-Dicoding.png",
+    image_url: "/project/Final-Project-Dicoding.png",
     tech: "javascript",
   },
   {
@@ -43,7 +43,7 @@ const project = [
     short_descript: "Website undangan digital untuk konfirmasi RSVP",
     link_project: "",
     link_github: "https://github.com/Renaldis/Daftar-Tamu-Wedding",
-    image_url: "../../../public/project/daftar-tamu-wedding.png",
+    image_url: "/project/daftar-tamu-wedding.png",
     tech: "php",
   },
   {
@@ -52,7 +52,7 @@ const project = [
     short_descript: "Website Travel",
     link_project: "https://keratontravel.netlify.app/",
     link_github: "https://github.com/Renaldis/keratontravel",
-    image_url: "../../../public/project/keratonTravel.png",
+    image_url: "/project/keratonTravel.png",
     tech: "javascript",
   },
   {
@@ -62,7 +62,7 @@ const project = [
     link_project:
       "https://www.figma.com/proto/vVQ8ajrrNIB2Li6qvx7Llz/Sport-Centre-Booking?node-id=0-1&t=OqZrKgqJYT5dSXZL-1",
     link_github: "",
-    image_url: "../../../public/project/Booking-Sport-App.png",
+    image_url: "/project/Booking-Sport-App.png",
     tech: "figma",
   },
   {
@@ -72,8 +72,17 @@ const project = [
     link_project:
       "https://www.figma.com/proto/FPLUhK1ZHSl4waa4VLtmgL/Prototype-UI-UX-Aplikasi-Janji-Jiwa-Design-Thinking?node-id=51-367&t=kdafmQI9NCAnIZn0-1&starting-point-node-id=51%3A385&scaling=scale-down&content-scaling=fixed",
     link_github: "",
-    image_url: "../../../public/project/JanjiJiwa.png",
+    image_url: "/project/JanjiJiwa.png",
     tech: "figma",
+  },
+  {
+    id: 9,
+    title: "Final Project Dicoding: Notes App ReactJS",
+    short_descript: "Membangun Aplikasi Catatan Menggunakan React",
+    link_project: "https://resnotes.netlify.app/",
+    link_github: "https://github.com/Renaldis/Notes-App-ReactJS/tree/main",
+    image_url: "/project/Notes-App.png",
+    tech: "javascript",
   },
 ];
 

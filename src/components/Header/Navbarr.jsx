@@ -44,14 +44,25 @@ export default function Navbarr() {
           </Navbar.Link>
         </Navbar.Collapse>
         <div className="flex gap-3 items-center cursor-pointer">
-          <i className="fab fa-linkedin text-xl"></i>
-          <i className="fab fa-instagram text-xl"></i>
-          <i className="fab fa-twitter text-xl"></i>
-          <i className="fab fa-github text-xl"></i>
+          <a href="https://www.linkedin.com/in/renaldiisptr/" target="_blank">
+            <i className="fab fa-linkedin text-xl"></i>
+          </a>
+          <a
+            href="https://www.instagram.com/renaldiisptr?igsh=aXhyMjkxaHQ1cWd3"
+            target="_blank"
+          >
+            <i className="fab fa-instagram text-xl"></i>
+          </a>
+          {/* <i className="fab fa-twitter text-xl"></i> */}
+          <a href="https://github.com/Renaldis" target="_blank">
+            <i className="fab fa-github text-xl"></i>
+          </a>
           <button className=" bg-yellow-300 text-black flex items-center gap-2 text-xs md:text-sm px-2 py-1 md:px-4 md:py-1 rounded-full font-semibold">
             Hire Me
             <span className="bg-white rounded-full px-2 py-1">
-              <i className="fab fa-whatsapp"></i>
+              <a href="https://t.me/renaldis142" target="_blank">
+                <i className="fab fa-telegram"></i>
+              </a>
             </span>
           </button>
         </div>
