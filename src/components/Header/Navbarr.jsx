@@ -62,14 +62,14 @@ export default function Navbarr() {
           <a href="https://github.com/Renaldis" target="_blank">
             <i className="fab fa-github text-xl"></i>
           </a>
-          <button className=" bg-yellow-300 text-black flex items-center gap-2 text-xs md:text-sm px-2 py-1 md:px-4 md:py-1 rounded-full font-semibold">
-            Hire Me
-            <span className="bg-white rounded-full px-2 py-1">
-              <a href="https://t.me/renaldis142" target="_blank">
+          <a href="https://t.me/renaldis142" target="_blank">
+            <span className=" bg-yellow-300 text-black flex items-center gap-2 text-xs md:text-sm px-2 py-1 md:px-4 md:py-1 rounded-full font-semibold">
+              Hire Me
+              <span className="bg-white rounded-full px-2 py-1">
                 <i className="fab fa-telegram"></i>
-              </a>
+              </span>
             </span>
-          </button>
+          </a>
         </div>
       </Navbar>
     </nav>

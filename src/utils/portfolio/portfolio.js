@@ -1,7 +1,7 @@
 const project = [
   {
     id: 1,
-    title: "SiniLoker.id",
+    title: "Final Project Sanbercode ReactJS: SiniLoker.id",
     short_descript:
       "Website lowongan kerja berbasis ReactJS untuk mempermudah pencarian dan pengelolaan informasi pekerjaan.",
     link_project: "https://renaldi.reactjssanbercode.my.id/",
