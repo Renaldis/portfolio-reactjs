@@ -8,6 +8,7 @@ import JavascriptSection from "./pages/Portfolio/pages/JavascriptSection";
 import PhpSection from "./pages/Portfolio/pages/PhpSection";
 import GlobalProvider from "./components/context/GlobalProvider";
 import FigmaSection from "./pages/Portfolio/pages/FigmaSection";
+import Contact from "./pages/Contact/Contact";
 
 function App() {
   return (
@@ -22,14 +23,7 @@ function App() {
               </Layout>
             }
           />
-          <Route
-            path="/portfolio"
-            element={
-              <Layout>
-                <Portfolio />
-              </Layout>
-            }
-          />
+
           <Route
             path="/portfolio"
             element={
@@ -45,6 +39,14 @@ function App() {
             <Route path="php" element={<PhpSection />} />
             <Route path="figma" element={<FigmaSection />} />
           </Route>
+          <Route
+            path="/contact"
+            element={
+              <Layout>
+                <Contact />
+              </Layout>
+            }
+          />
         </Routes>
       </Router>
     </GlobalProvider>

@@ -38,8 +38,13 @@ export default function Navbarr() {
           >
             Portfolio
           </Navbar.Link>
-          <Navbar.Link className="font-bold cursor-pointer">Blog</Navbar.Link>
-          <Navbar.Link className="font-bold cursor-pointer">
+          {/* <Navbar.Link className="font-bold cursor-pointer">Blog</Navbar.Link> */}
+          <Navbar.Link
+            className={`font-bold cursor-pointer ${
+              location.pathname == "/contact" && "text-yellow-400"
+            }`}
+            onClick={() => navigate("/contact")}
+          >
             Contact
           </Navbar.Link>
         </Navbar.Collapse>
