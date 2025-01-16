@@ -14,7 +14,7 @@ export default function FigmaSection() {
 
   return (
     <div className="px-5 pb-5">
-      <h1 className="font-semibold text-slate-800 mt-10 mb-2">Figma</h1>
+      <h1 className="font-semibold text-slate-800 mb-2">Figma</h1>
       <div className="grid lg:grid-cols-3 sm:grid-cols-2 grid-cols-1 gap-2">
         {dataFigma.length > 0 ? (
           dataFigma.map((project) => (
