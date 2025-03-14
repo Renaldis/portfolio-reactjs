@@ -40,7 +40,7 @@ const project = [
   {
     id: 5,
     title: "Digital Wedding RSVP: Sistem Pendaftaran Tamu Online",
-    short_descript: "Website undangan digital untuk konfirmasi RSVP",
+    short_descript: "Website undangan digital",
     link_project: "",
     link_github: "https://github.com/Renaldis/Daftar-Tamu-Wedding",
     image_url: "/project/daftar-tamu-wedding.png",
@@ -58,7 +58,7 @@ const project = [
   {
     id: 7,
     title: "UI/UX Figma: GSC Booking Sport App",
-    short_descript: "Rancangan Prototype Booking Sport APP With Figma",
+    short_descript: "Prototype Booking Sport APP",
     link_project:
       "https://www.figma.com/proto/vVQ8ajrrNIB2Li6qvx7Llz/Sport-Centre-Booking?node-id=0-1&t=OqZrKgqJYT5dSXZL-1",
     link_github: "",
@@ -68,7 +68,7 @@ const project = [
   {
     id: 8,
     title: "UI/UX Figma: Food Order Jiwa+",
-    short_descript: "Rancangan Prototype Pemesanan makanan Jiwa+ With Figma",
+    short_descript: "Prototype Pemesanan makanan Jiwa+",
     link_project:
       "https://www.figma.com/proto/FPLUhK1ZHSl4waa4VLtmgL/Prototype-UI-UX-Aplikasi-Janji-Jiwa-Design-Thinking?node-id=51-367&t=kdafmQI9NCAnIZn0-1&starting-point-node-id=51%3A385&scaling=scale-down&content-scaling=fixed",
     link_github: "",
@@ -78,10 +78,19 @@ const project = [
   {
     id: 9,
     title: "Final Project Dicoding: Notes App ReactJS",
-    short_descript: "Membangun Aplikasi Catatan Menggunakan React",
+    short_descript: "Membangun Aplikasi Catatan",
     link_project: "https://resnotes.netlify.app/",
     link_github: "https://github.com/Renaldis/Notes-App-ReactJS/tree/main",
     image_url: "/project/Notes-App.png",
+    tech: "javascript",
+  },
+  {
+    id: 10,
+    title: "Final Project Sanbercode NextJS: SocialAPP",
+    short_descript: "Aplikasi Social Media Sederhana",
+    link_project: "https://social-app-rnd.vercel.app/login",
+    link_github: "",
+    image_url: "/project/social-app.png",
     tech: "javascript",
   },
 ];

@@ -70,7 +70,7 @@ export default function Navbarr() {
           >
             <i className="fab fa-github text-xl"></i>
           </a>
-          <a
+          {/* <a
             href="https://wa.me/+6289675759858"
             target="_blank"
             rel="noopener noreferrer"
@@ -81,7 +81,7 @@ export default function Navbarr() {
                 <i className="fab fa-whatsapp"></i>
               </span>
             </span>
-          </a>
+          </a> */}
         </div>
       </Navbar>
     </nav>

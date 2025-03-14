@@ -24,7 +24,7 @@ let educationHistory = [
     title: "Universitas Gunadarma",
     date: "Sept 2022 - Sept 2026(expected)",
     location: "Depok, West Java, Indonesia",
-    img: "https://d22gwcrfo2de51.cloudfront.net/wp-content/uploads/2020/08/logo_Universitas-Gunadarma-thumb.png",
+    img: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQXv9KmUcR_7nWLL9iwXT3HDdWBNgt0lYE38A&s",
     description: [
       {
         id: 1,
