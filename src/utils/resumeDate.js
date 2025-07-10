@@ -1,5 +1,35 @@
 let workingHistory = [
   {
+    title: "Frontend Web Developer",
+    employmentType: "Internship",
+    company: "PT Minilemon Nusantara",
+    date: "03 Februari 2025 - 03 Agustus 2025",
+    location: "Jakarta, West Java, Indonesia",
+    locType: "Remote",
+    description: [
+      "Teach fundamental concepts of Go programming language",
+      "Guide students in understanding syntax, data types, control structures, and functions",
+      "Teach how to write and run unit tests using Go's built-in testing package",
+      "Assist students in debugging, reviewing code, and solving technical problems",
+    ],
+    img: "https://minilemon.co.id/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Flogo.8489a3b1.png&w=640&q=75",
+  },
+  {
+    title: "Course Instructor",
+    employmentType: "Contract",
+    company: "Lembaga Pengembangan Komputerisasi Universitas Gunadarma",
+    date: "April 2025 - present",
+    location: "Depok, West Java, Indonesia",
+    locType: "on-site",
+    description: [
+      "Teach fundamental concepts of Go programming language",
+      "Guide students in understanding syntax, data types, control structures, and functions",
+      "Teach how to write and run unit tests using Go's built-in testing package",
+      "Assist students in debugging, reviewing code, and solving technical problems",
+    ],
+    img: "https://vm.lepkom.gunadarma.ac.id/assets/front/images/icon/logo-lepkom.png",
+  },
+  {
     title: "Course Assistant",
     employmentType: "Contract",
     company: "Lembaga Pengembangan Komputerisasi Universitas Gunadarma",
