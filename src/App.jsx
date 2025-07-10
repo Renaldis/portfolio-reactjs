@@ -9,7 +9,7 @@ import PhpSection from "./pages/Portfolio/pages/PhpSection";
 import GlobalProvider from "./components/context/GlobalProvider";
 import FigmaSection from "./pages/Portfolio/pages/FigmaSection";
 import Contact from "./pages/Contact/Contact";
-import NotFoundPages from "./pages/Portfolio/pages/notFoundPages";
+import NotFoundPages from "./pages/Portfolio/pages/NotFoundPages";
 
 function App() {
   return (
