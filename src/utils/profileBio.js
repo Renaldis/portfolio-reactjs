@@ -4,7 +4,6 @@ export const ProfileData = {
   name: "Renaldi Saputra",
   title: "Frontend Developer",
   photo: profileImg,
-  birthday: "31/12/2003",
   status: "Mahasiswa",
   email: "renaldis142@gmail.com",
   usernameLinkedin: "renaldiisptr",
