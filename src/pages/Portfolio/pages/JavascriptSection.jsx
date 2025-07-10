@@ -25,7 +25,7 @@ export default function JavascriptSection() {
               <img
                 src={project.image_url}
                 alt={`${project.id} - ${project.title}`}
-                className="w-full"
+                className="w-full h-40 object-cover"
               />
               <div className="px-2 py-1">
                 <h2>{project.title}</h2>

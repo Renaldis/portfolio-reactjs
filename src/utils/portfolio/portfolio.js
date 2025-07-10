@@ -93,6 +93,25 @@ const project = [
     image_url: "/project/social-app.png",
     tech: "javascript",
   },
+  {
+    id: 11,
+    title:
+      "Aplikasi Wedding Organizer Manajemen Tamu Undangan Pernikahan Berbasis Web (NextJS)",
+    short_descript: "Wedding Organizer Manajemen Daftar Tamu",
+    link_project: "https://fiqrimeiliza.vercel.app/",
+    link_github: "",
+    image_url: "/project/MyWedding.png",
+    tech: "javascript",
+  },
+  {
+    id: 12,
+    title: "POS Sistem Kasir Warung Makan (NextJS)",
+    short_descript: "Sistem Kasir - Manajemen Warung Makanan",
+    link_project: "https://pos-warung-bakmi.vercel.app/",
+    link_github: "",
+    image_url: "/project/POS-Warung-Bakmi.png",
+    tech: "javascript",
+  },
 ];
 
 export { project };

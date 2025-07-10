@@ -90,7 +90,7 @@ export default function Resume() {
                         <img
                           src={item.img}
                           alt={`Logo of ${item.company}`}
-                          className="w-full"
+                          className="w-full bg-white"
                         />
                       </div>
                       <h1 className="font-semibold">{item.title}</h1>
