@@ -112,6 +112,15 @@ const project = [
     image_url: "/project/POS-Warung-Bakmi.png",
     tech: "javascript",
   },
+  {
+    id: 13,
+    title: "Finance Tracker APP (MERN)",
+    short_descript: "Sistem tracking keuangan anda",
+    link_project: "https://expense-fe.resbytes.com/",
+    link_github: "https://github.com/Renaldis/personal-finance",
+    image_url: "/project/finance-tracker.png",
+    tech: "javascript",
+  },
 ];
 
 export { project };
