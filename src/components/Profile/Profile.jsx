@@ -25,7 +25,7 @@ export default function Profile(props) {
               <span className="opacity-0">s</span>
             </li>
             <ListProfile label={"Name: "} value={data.name} />
-            <ListProfile label={"Birthday: "} value={data.birthday} />
+            {/* <ListProfile label={"Birthday: "} value={data.birthday} /> */}
             <ListProfile label={"Status: "} value={data.status} />
             <ListProfile label={"Email: "} value={data.email} mail />
             <ListProfile
